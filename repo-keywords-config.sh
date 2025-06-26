@@ -1,8 +1,8 @@
 #!/bin/bash
-
+### fix to a post sync repo ie emerge --sync and fix $overlay keywords 
 # Define the specific repository and keywords
 SPECIFIC_REPO="sakaki-tools"
-KEYWORDS="~amd64 ~arm64 ~riscv ~*"
+KEYWORDS="~amd64 ~arm64 ~riscv ~* **"
 SPECIFIC_KEYWORDS_FILE="/etc/portage/package.accept_keywords/${SPECIFIC_REPO}-repo"
 
 # Function to append keywords if not present for a specific repository
